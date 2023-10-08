@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Письмо Санте</h1>
+    <p>
+      Дорогой друг,не стесняйся и расскажи Санте о том, кто ты и о том,что ты
+      хочешь получить на Рождество.
+    </p>
+
+    <form action="./greetings.html">
+      <div class="name">
+        <input type="text" placeholder="Логин" required />
+        <input type="password" placeholder="Пароль" required />
+        <input type="text" placeholder="Имя" required />
+      </div>
+      <div>
+        <h5>Пол:</h5>
+        <input type="radio" name="gender" id="boy" value="boy" />
+        <label for="boy">Мальчик</label>
+        <input type="radio" name="gender" id="girl" value="girl" />
+        <label for="girl">Девочка</label>
+      </div>
+
+      <div class="day">
+        <label for="birthday">День рождения</label>
+        <input type="date" name="birthday" id="birthday" />
+      </div>
+
+      <div class="cities">
+        <select name="city" id="city">
+          <option value="">Москва</option>
+          <option value="">Санкт-Петербург</option>
+          <option value="">Саратов</option>
+          <option value="">Казань</option>
+          <option value="">Ульяновск</option>
+        </select>
+      </div>
+
+      <div>
+        <h5>Выбери цвет своей новой игрушки:</h5>
+        <input type="color" name="red" id="red" />
+        <label for="red">Шапочка</label>
+        <div>
+          <input type="color" name="blue" id="blue" />
+          <label for="blue">Костюм</label>
+        </div>
+      </div>
+
+      <div>
+        <h5>Ты был хорошим ребёнком?</h5>
+        <input type="radio" name="no" id="yes" />
+        <label for="yes">Да</label>
+        <input type="radio" name="no" id="no" />
+        <label for="no">Нет</label>
+      </div>
+
+      <div class="submit">
+        <input type="submit" value="Отправить письмо Санте" />
+      </div>
+    </form>
+  </body>
+</html>
